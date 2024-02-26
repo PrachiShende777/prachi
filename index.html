@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Prachi Shende Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="New folder/Screenshot_26-2-2024_224655_manage.wix.com.jpeg" class="logo"
+          style="height: 50px;width: 400px;background-blend-mode: luminosity;">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#projects">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <img align="right" src="New folder/WhatsApp Image 2024-02-24 at 12.43.17_ac879c67.jpg" class="logo"
+          style="height: 500px;width: 400px;background-blend-mode: luminosity;">
+        <p>COMPUTER ENGINEER</p>
+        <h2>Hi, I'm <span>Prachi</span><br><span>Shende</span><br>from<br><span>Mumbai India</span></h2><br><br><br>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <div class="image-container">
+            <img src="New folder/prachi pic.jpg" alt="Image">
+          </div>
+        </div>
+        <div class="about-col-2">
+          <h2 class="subtitle">ABOUT ME</h2>
+          <p>Hi! I'm a beginner computer science student with a strong interest in learning about programming,
+            algorithms, and technology. I'm currently eager to expand my knowledge and skills in this exciting field.
+          </p>
+
+          <p> I'm particularly interested in front end development and creation of dynamic webpages.along with this I
+            enjoy problem solving at the backend.</p>
+          <p>
+
+            I'm always looking for opportunities to learn and grow, whether it's through online courses, personal
+            projects, or collaborating with others.</p>
+          <div class="tabtitles">
+            <p class="tablinks activelink" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tablinks" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tablinks" onclick="opentab('education')">
+              Education
+            </p>
+          </div>
+          <div class="contents activetab" id="skills">
+            <ul>
+              <li><span>Web development</span><br>Knowledge about the use of html , css and javscipt for front end
+                development</li>
+              <li><span>Programming Languages know</span><br>Html, css , javacsript, php ,C , C++,python</li>
+
+            </ul>
+          </div>
+          <div class="contents" id="experience">
+            <ul>
+              <li><span>Beginner level</span><br>Currently enrolled in a computer science program.</li>
+              In my pursuit of learning, I have engaged in activities such as online courses, coding challenges, etc
+              </li>
+
+            </ul>
+          </div>
+          <div class="contents" id="education">
+            <ul>
+              <li><span>Primary and Secondary schooling</span><br>Saint Thomas High School , Kalyan east</li>
+              <li><span>Junior College</span><br>B.K. Birla college of Arts , Science and Commerce,Kalyan West</li>
+              <li>
+                <span>Higher Studies</span><br>
+                <span>Course : Btech Computer Engineering</span><br>
+                Veermata Jijabai Technological Institute ,Matunga east
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+
+          <h2>Web Design</h2>
+          <p>Can offer assistance with tasks like adding basic website elements, styling existing pages, and
+            implementing minor layout changes .</p>
+
+        </div>
+        <div>
+          <h2>Problem Solving</h2>
+          <p>Can help with tasks like sorting, filtering, formatting data and extracting insights using basic scripting
+            languages like Python or JavaScript.</p>
+
+        </div>
+        <div>
+          <h2>Testing and Debugging</h2>
+          <p>Can help with manual testing of backend functionalities, reporting any discrepancies or unexpected
+            behavior.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <section id="projects">
+      <h2 class="project-title">Projects</h2>
+      <p class="coming-soon">Coming Soon!</p>
+    </section>
+
+    <div class="Container">
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +91 8433685191</p><br><br>
+        <p>Email: ppshende_b23@ce.vjti.ac.in</p>
+      </div>
+      <form action="#">
+        <h2>Leave a Message</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+        <button type="submit">Send Message</button>
+
+      </form>
+    </div><br><br>
+    <div class="copyright">
+      <p align="center">&copy; 2024 Prachi Shende</p>
+    </div>
+
+
+    <script>
+      var tablinks = document.getElementsByClassName("tablinks");
+      var contents = document.getElementsByClassName("contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("activelink");
+        }
+
+        for (content of contents) {
+          content.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink"); document.getElementById(tabname).classList.add("activetab")
+
+      }
+    </script>
+</body>
+
+</html>
